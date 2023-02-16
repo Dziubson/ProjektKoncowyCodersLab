@@ -1,0 +1,7 @@
+GET http://localhost:8080/findAll
+###
+GET http://localhost:8080/findAllByRating?rating=12
+###
+GET http://localhost:8080/books/update?id=1&title="udpa"
+###
+GET http://localhost:8080/books/findAllAnyPublisher
