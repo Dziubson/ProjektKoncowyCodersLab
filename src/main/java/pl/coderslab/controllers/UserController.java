@@ -2,24 +2,26 @@ package pl.coderslab.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("/mvc/user")
 public class UserController {
 
 
- @GetMapping(path="/register")
+ @GetMapping("/register")
  public String showRegister() {
-	return "register";
+	return "/register";
  }
  
- @GetMapping(path="/index")
+ @GetMapping("/index")
  public String showIndex() {
-	return "index";
+	return "/index";
  }
  
- @GetMapping(path="/home")
+ @GetMapping("/home")
  public String showHome() {
-	return "home";
+	return "/home";
  }
  
 }
